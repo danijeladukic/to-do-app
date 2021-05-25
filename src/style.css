@@ -1,0 +1,265 @@
+       
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html{
+    background-image: url('/src/images/background.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    
+}
+
+body{
+    
+    background-repeat: no-repeat;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+    
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    padding: 0.5rem;
+    font-size:2rem;
+    border: 1px solid black;
+    background:transparent;
+}
+form button{
+    padding: 0.5rem;
+    font-size:2rem;
+    border: none;
+    background:transparent;
+}
+form button{
+    color:black;
+    background-color: transparent;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: black;
+    color: white;
+}
+
+
+.trash-btn, .complete-btn{
+    background-color: transparent;
+    color: black;
+    padding: 1rem;
+    cursor:pointer;
+    font-size:1rem;
+    border: none;
+}
+
+
+
+.fa-trash, 
+.fa-check{
+    pointer-events: none;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+  
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearence: none;
+    -moz-appearence: none;
+    appearance: none;
+    outline:none;
+    border:1px solid black;
+
+
+}
+.select{
+    margin:1rem;
+    position:relative;
+    overflow: hidden;
+}
+select{
+    color:black;
+    width:10rem;
+    cursor:pointer;
+    padding: 1rem;
+    background-color: transparent;
+    
+
+
+}
+
+.select::after{
+    
+    content:"sort";
+    color: black;
+    width: 4rem;
+    padding-left: 0.6rem;
+    padding-top: 0.2rem;
+    position: absolute;
+    background: transparent;
+    top:0rem;
+    right:0;
+    bottom:0;
+    transition: all 0.3 ease;
+    pointer-events: none;
+}
+.select::after:hover{
+    background-color: black;
+    color:white
+   
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+
+}
+.days-list{
+    min-height: 700px;
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: transparent;
+    
+
+}
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left:0;
+    padding-top: 0;
+    
+    width: 60%;
+
+  
+}
+.day{
+    background-color: transparent;
+    color:black;
+    font-family:  'Homemade Apple', cursive;
+    width: 300px;
+    height:250px;
+    text-align: center;
+    padding-top:2rem;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+
+   }
+
+.list-div{
+    background-color: transparent;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 1200px;
+    min-height:250px;
+    height: fit-content;
+    font-size: 2rem;
+
+   
+    text-align: left;
+    padding-bottom: auto;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.form-div{
+    padding-top: 0;
+    min-height: 100px;
+    border-bottom: 1px solid black;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+
+    padding-top: 0;
+
+
+}
+.todo{
+    max-width: 600px;;
+    min-width: 300px;
+    margin:0;
+    margin-left: 0.5rem;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+
+}
+.todo li{
+    flex: 1;
+    list-style: none;
+
+}
+.quote{
+    width: 100%;
+    font-family:  'Homemade Apple', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.author{
+    text-align: center;
+    font-family:  'Homemade Apple', cursive;
+    color: black;
+    font-size: 10px;
+}
+.last{
+    border-bottom: none;
+}
+.draggable{
+    cursor: move;
+}
+.draggable.dragging {
+    opacity: 0.5;
+}
+.list-div{
+    height: 250px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
