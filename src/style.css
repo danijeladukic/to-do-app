@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    
+    width: 100%;
     background-repeat: no-repeat;
     color:white;
     font-family: 'Poppins', sans-serif;
@@ -105,33 +105,42 @@ select{
 }
 select{
     color:black;
-    width:10rem;
+    width:220px;
     cursor:pointer;
-    padding: 1rem;
+    padding: 10px;
     background-color: transparent;
+    font-family: cursive, sans-serif;
+    font-size: 18px;
+
     
 
 
 }
 
 .select::after{
+    z-index: 3;
     
     content:"sort";
     color: black;
     width: 4rem;
-    padding-left: 0.6rem;
-    padding-top: 0.2rem;
+    padding:15px;
     position: absolute;
     background: transparent;
     top:0rem;
     right:0;
     bottom:0;
-    transition: all 0.3 ease;
+    transition: all 0.3 ease-in-out;
     pointer-events: none;
+    font-family: cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
 }
-.select::after:hover{
+.select:hover::after{
     background-color: black;
-    color:white
+    color:white;
+    transition: all 0.3 ease-in-out;
    
 }
 
@@ -177,13 +186,18 @@ select{
     border-bottom: 1px solid black;
     border-right: 1px solid black;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
    }
 
 .list-div{
     background-color: transparent;
     color:black;
     font-family: 'Courier New', Courier, monospace;
-    min-width: 1200px;
+    min-width: 400px;
+    width: fit-content;
     min-height:250px;
     height: fit-content;
     font-size: 2rem;
@@ -216,7 +230,8 @@ select{
 
 }
 .todo{
-    max-width: 600px;;
+
+    max-width: 500px;
     min-width: 300px;
     margin:0;
     margin-left: 0.5rem;
@@ -234,7 +249,7 @@ select{
 
 }
 .quote{
-    width: 100%;
+    width: 110%;
     font-family:  'Homemade Apple', cursive;
     font-size: 30px;
     text-align: center;
@@ -244,7 +259,7 @@ select{
     text-align: center;
     font-family:  'Homemade Apple', cursive;
     color: black;
-    font-size: 10px;
+    font-size: 12px;
 }
 .last{
     border-bottom: none;
