@@ -1,4 +1,6 @@
-This app is simple todo list with overwiev of the week.
+Vintage looking weekly To Do List in single page form created with JavaScript. Perfect for desktop and tablet use. Displays random quote on refresh, shows current date and stores your chores in local storage. Allows adding new chore, crossing it, and dragging it inbetween days, as well as deleting it and sorting by completion.
+
+
 Features:
 -new motivational quote on refresh
 -today's date
